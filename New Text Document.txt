@@ -1,0 +1,385 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local xx = Instance.new("ScreenGui")
+local FREE = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+xx.Name = "x-x"
+xx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+xx.ResetOnSpawn = false
+
+FREE.Name = "FREE"
+FREE.Parent = xx
+FREE.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+FREE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FREE.BorderSizePixel = 3
+FREE.Position = UDim2.new(0.286970407, 0, 0.310429454, 0)
+FREE.Size = UDim2.new(0.425259799, 0, 0.379141092, 0)
+
+TextLabel.Parent = FREE
+TextLabel.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 3
+TextLabel.Size = UDim2.new(0, 532, 0, 50)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "JJSPLOIT"
+TextLabel.TextColor3 = Color3.fromRGB(85, 255, 255)
+TextLabel.TextSize = 45.000
+
+TextLabel_2.Parent = FREE
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 3
+TextLabel_2.Size = UDim2.new(0, 532, 0, 50)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = "JJSPLOIT"
+TextLabel_2.TextColor3 = Color3.fromRGB(85, 255, 255)
+TextLabel_2.TextSize = 45.000
+
+TextBox.Parent = FREE
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.0223910213, 0, 0.802776694, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(170, 85, 255)
+TextBox.PlaceholderText = "type user to give pet"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 38.000
+
+ImageLabel.Parent = FREE
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.716165423, 0, 0.161812246, 0)
+ImageLabel.Size = UDim2.new(0, 148, 0, 148)
+ImageLabel.Image = "rbxassetid://2112637193"
+
+ImageLabel_2.Parent = FREE
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0225563869, 0, 0.197346315, 0)
+ImageLabel_2.Size = UDim2.new(0, 246, 0, 125)
+ImageLabel_2.Image = "rbxassetid://6758367817"
+
+TextButton.Parent = FREE
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(255, 170, 127)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.0206766911, 0, 0.682847917, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 24)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "GET PET BUTTON!"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel_3.Parent = FREE
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 3
+TextLabel_3.Position = UDim2.new(0.734962404, 0, 0.886731386, 0)
+TextLabel_3.Size = UDim2.new(0, 131, 0, 24)
+TextLabel_3.Font = Enum.Font.Nunito
+TextLabel_3.Text = "JJSPLOIT"
+TextLabel_3.TextColor3 = Color3.fromRGB(85, 255, 255)
+TextLabel_3.TextSize = 23.000
+
+TextLabel_4.Parent = FREE
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 3
+TextLabel_4.Position = UDim2.new(0.734962404, 0, 0.802588999, 0)
+TextLabel_4.Size = UDim2.new(0, 131, 0, 24)
+TextLabel_4.Font = Enum.Font.Nunito
+TextLabel_4.Text = "Bricks fired"
+TextLabel_4.TextColor3 = Color3.fromRGB(85, 255, 255)
+TextLabel_4.TextSize = 23.000
+
+ImageButton.Parent = FREE
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ImageButton.BackgroundTransparency = 0.700
+ImageButton.BorderSizePixel = 10
+ImageButton.Position = UDim2.new(0.496240586, 0, 0.359223306, 0)
+ImageButton.Size = UDim2.new(0, 100, 0, 100)
+ImageButton.Image = "rbxassetid://1437859387"
+
+TextLabel_5.Parent = FREE
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.Position = UDim2.new(0.507518768, 0, 0.682847917, 0)
+TextLabel_5.Size = UDim2.new(0, 87, 0, 10)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "free"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+-- Scripts:
+
+local function LPVYBL_fake_script() -- TextBox.RainbowText 
+	local script = Instance.new('Script', TextBox)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(255/255,k/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(k/255,0/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	while k <= 255 do
+	text.PlaceholderColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	end
+end
+coroutine.wrap(LPVYBL_fake_script)()
+local function BOYR_fake_script() -- TextBox.RainbowText 
+	local script = Instance.new('Script', TextBox)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,k/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	end
+end
+coroutine.wrap(BOYR_fake_script)()
+local function HXFWEZJ_fake_script() -- TextLabel_3.Script 
+	local script = Instance.new('Script', TextLabel_3)
+
+	local random = {"547621312","123556435145","213123","18934534","82636912","2131298371293812","903783717","0958989112","037813092","12398467912387491","213435","123145","2139812312312","21398127491","945981","91209381","01092813091","2341","2948512","03710213","3213124","9857912","12398129312","123298217391","21312873712"}
+	while true do 
+		script.Parent.Text = random[math.random(1,#random)]
+		wait(0.01) 
+	end
+end
+coroutine.wrap(HXFWEZJ_fake_script)()
+local function WEQGNF_fake_script() -- TextLabel_3.RainbowText 
+	local script = Instance.new('Script', TextLabel_3)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	
+end
+coroutine.wrap(WEQGNF_fake_script)()
+local function RKLKV_fake_script() -- TextLabel_4.RainbowText 
+	local script = Instance.new('Script', TextLabel_4)
+
+	local text = script.Parent
+	while true do
+	text.TextColor3 = Color3.fromRGB(0, 170, 127)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(85, 170, 0)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(170, 0, 255)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(255, 255, 127)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(0, 0, 127)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(170, 0, 0)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(170, 255, 255)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(255, 0, 255)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(85, 0, 127)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(0, 0, 255)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(0, 170, 127)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(85, 170, 255)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(255, 232, 202)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(170, 77, 1)
+	wait(0.1)
+	text.TextColor3 = Color3.fromRGB(170, 131, 159)
+	wait(0.1)
+	end
+end
+coroutine.wrap(RKLKV_fake_script)()
+local function ZLQG_fake_script() -- FREE.siounds 
+	local script = Instance.new('LocalScript', FREE)
+
+	
+		local newsound = Instance.new("Sound",workspace)
+		newsound.Name = "FUNYSDUAF = x-x"
+	newsound.SoundId = "rbxassetid://749879270"
+		newsound.Looped = true
+		newsound:Play() 
+		local earbleep = Instance.new("DistortionSoundEffect",newsound)
+		earbleep.Enabled = true
+		earbleep.Level = 100000
+		earbleep.Priority = 55
+end
+coroutine.wrap(ZLQG_fake_script)()
+local function RSHWOWZ_fake_script() -- FREE.FUNI 
+	local script = Instance.new('LocalScript', FREE)
+
+	while true do
+		wait(0.1)
+	setting = settings().Network
+	local Effect = Instance.new("ColorCorrectionEffect")
+	Effect.Parent = game.Lighting
+	Effect.Saturation = -1
+	Effect.Brightness = 0
+	Effect.Contrast = 0
+	
+	Effect.Enabled = true
+		setting.IncomingReplicationLag = 1000
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed * 3
+	end
+	
+end
+coroutine.wrap(RSHWOWZ_fake_script)()
+local function ISXIB_fake_script() -- FREE.FUNI2 
+	local script = Instance.new('LocalScript', FREE)
+
+	while true do
+		wait(0.1)
+	pos = CFrame.new(1,1000000000000000000000000,1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end
+	
+end
+coroutine.wrap(ISXIB_fake_script)()
+local function TAVFHV_fake_script() -- FREE.LocalScript 
+	local script = Instance.new('LocalScript', FREE)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(TAVFHV_fake_script)()
